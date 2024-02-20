@@ -1,5 +1,5 @@
 var express = require('express');
-var mysql = require('mysql');
+var mysql = require('mysql2');
 const bodyParser = require('body-parser');
 const app = express();
 const port = 55966
@@ -8,9 +8,9 @@ app.use(bodyParser.json());
 
 const db = mysql.createConnection({
   host: 'now.wthosp.go.th',
-  user: 'now',
-  password: 'Now072518',
-  database: 'kow'
+  user: 'kow',
+  password: 'pass1234',
+  database: 'A_Care'
 });
 
 db.connect((err) => {
