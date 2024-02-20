@@ -15,8 +15,8 @@ age.addEventListener('input', (event) => {
   const numericValue = parseFloat(inputValue);
   if (isNaN(numericValue)) {
     event.target.value = inputValue.slice(0, -1);
-  } else if (numericValue < 0 || numericValue > 120) {
-    event.target.value = Math.min(Math.max(numericValue, 0), 120);
+  } else if (numericValue < 1 || numericValue > 120) {
+    event.target.value = Math.min(Math.max(numericValue, 1), 120);
   } else {
     event.target.value = numericValue;
   }
