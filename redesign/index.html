@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Care Calculator</title>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- normalize css -->
+    <link rel = "stylesheet" href = "css/normalize.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slick slider css -->
+    <link rel = "stylesheet" href = "plugins/slick-1.8.1/slick/slick.css">
+    <link rel = "stylesheet" href = "plugins/slick-1.8.1/slick/slick-theme.css">
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "css/utilities.css">
+    <link rel = "stylesheet" href = "css/main.css">
+
+</head>
+<body>
+    
+    <!-- header -->
+    <header class = "header" id = "header">
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "#" class = "navbar-brand flex">
+                    <img src = "images/logo.png">
+                    <span class = "text-uppercase text-white font-sm fw-5">A.Care</span>
+                </a>
+                <button type = "button" class = "navbar-toggler-btn text-white">
+                    <i class = "fas fa-bars fa-2x"></i>
+                </button>
+
+                <div class = "navbar-collapse bg-green">
+                    <ul class = "navbar-nav text-capitalize font-md fw-7">
+                        <li class = "nav-item">
+                            <a href = "#header" class = "nav-link text-white">home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "#about" class = "nav-link text-white">calculator</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "#courses" class = "nav-link text-white">Information</a>
+                        </li>
+                        <!-- <li class = "nav-item">
+                            <a href = "#teachers" class = "nav-link text-white">BMR Info</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "#programs" class = "nav-link text-white">TDEE Info</a>
+                        </li> -->
+                        <li class = "nav-item">
+                            <a href = "#features" class = "nav-link text-white">User Manual</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "#contact" class = "nav-link text-white">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class = "header-banner-wrapper">
+            <div class = "header-banner banner-one flex">
+                <div class = "container text-center text-white">
+                    <h1>A.Care Health Calculator</h1>
+                    <p class = "lead">chee wit man sao jung loey TT</p>
+                    <!-- <button type = "button" class = "btn">Welcome</button> -->
+                </div>
+            </div>
+            <div class = "header-banner banner-two flex">
+                <div class = "container text-center text-white">
+                    <h1>BMI</h1>
+                    <p class = "lead">Any successful career start with good education</p>
+                    <button type = "button" class = "btn">Learn more</button>
+                </div>
+            </div>
+            <div class = "header-banner banner-three flex">
+                <div class = "container text-center text-white">
+                    <h1>BMR</h1>
+                    <p class = "lead">Any successful career start with good education</p>
+                    <button type = "button" class = "btn">Learn more</button>
+                </div>
+            </div>
+            <div class = "header-banner banner-four flex">
+                <div class = "container text-center text-white">
+                    <h1>TDEE</h1>
+                    <p class = "lead">Any successful career start with good education</p>
+                    <button type = "button" class = "btn">Learn more</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- main -->
+    <main>
+        <!-- about section -->
+        <section class = "about bg-white" id = "about">
+            <div class = "container">
+                <!-- <div class = "about-content grid"> -->
+                    <!-- <div class = "about-left">
+                        <img src = "images/introduction_img.png">
+                    </div>
+                    <div class = "about-right"> -->
+                        <!-- <div class="container2"> -->
+                            <div class="BMI">
+                              <br><br>
+                            </div>
+                            <div class="box"><br>
+                              <h1>Health Calculator</h1>
+                              <div class="content">
+                                <div class="texttitle">
+                                  <p>Enter Your Age</p><br>
+                                </div>
+                                </div>
+                                <div class="input">
+                                  <input type="text" class="text-input" id="age1" autocomplete="off" required />
+                                </div>
+                                <div class="gendertitle">
+                                  <p>Select Gender</p><br>
+                                </div><br>
+                      
+                                <div class="gender">
+                      
+                                  <label class="container">
+                                    <input type="radio" name="radio" id="m1">
+                                    <p class="text">Male</p>
+                                    <span class="checkmark"></span>
+                                  </label>
+                      
+                      
+                                  <label class="container">
+                                    <input type="radio" name="radio" id="f1">
+                                    <p class="text">Female</p>
+                                    <span class="checkmark"></span>
+                                  </label>
+                      
+                                </div>
+                      
+                                <div class="containerHW">
+                                  <div class="inputH">
+                                    <label for="height">Height(cm)</label>
+                                    <input type="number" id="height1" required>
+                                  </div>
+                      
+                                  <div class="inputW">
+                                    <label for="weight">Weight(kg)</label>
+                                    <input type="number" id="weight1" required>
+                                  </div>
+                                </div>
+                              
+                              <button class="calculate" id="submit" onclick="calculate();">Calculate BMI</button>
+                              <div class="result">
+                                <p>Your BMI is</p>
+                                <div id="result">00.00</div>
+                                <h4 class="comment"></h4>
+                              </div>
+                                <button class="calculate" id="submit" onclick="calculate1();">Calculate BMR & TDEE </button>
+                              <div class="result1">
+                                <p>Your BMR is</p>
+                                <div id="result1">00.00</div>
+                                <p class="comment1"></p>
+                                <div class="daily-calories">
+                                  <h4>Daily Calorie Needs (TDEE)</h4>
+                      
+                                  <ul class="activity-levels">
+                                    <li>
+                                      <p>
+                                        <strong class="name">Sedentary</strong>
+                                        <small class="desc">Little to no exercise</small>
+                                      </p>
+                                      <span class="value" id="sedentary">0</span>
+                                    </li>
+                                    <li>
+                                      <p>
+                                        <strong class="name">Lightly Active</strong>
+                                        <small class="desc">Light exercise or sports (1-3 days/week)</small>
+                                      </p>
+                                      <span class="value" id="light">0</span>
+                                    </li>
+                                    <li>
+                                      <p>
+                                        <strong class="name">Moderately Active</strong>
+                                        <small class="desc">Moderate exercise or sports (4-5 days/week)</small>
+                                      </p>
+                                      <span class="value" id="moderate">0</span>
+                                    </li>
+                                    <li>
+                                      <p>
+                                        <strong class="name">Very Active</strong>
+                                        <small class="desc">Hard exercise or sports (6-7 days/week)</small>
+                                      </p>
+                                      <span class="value" id="very-active">0</span>
+                                    </li>
+                                    <li>
+                                      <p>
+                                        <strong class="name">Super Active</strong>
+                                        <small class="desc">Very hard exercise, physical job, or training twice a day</small>
+                                      </p>
+                                      <span class="value" id="super-active">0</span>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              </div>
+                            <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of about section -->
+
+        <!-- courses section -->
+        <section class = "courses bg-white py-4" id = "courses">
+            <div class = "container">
+                <div class = "section-title">
+                    <h2>Health Information</h2><br>
+                </div>
+                <div class = "courses-content grid">
+                    <article class = "courses-item">
+                        <div class = "bg-white-sm">
+                            <div class = "image">
+                                <img src = "images/BMI.jpg" alt = "course image">
+                            </div>
+                            <div class = "details">
+                                <h3 class = "font-lg">BMI Section</h3>
+                                <p class = "text">ดัชนีมวลกาย
+                                    หรือ Body Mass Index เป็นค่าสากลที่ใช้เพื่อคำนวณหาน้ำหนักตัวที่ควรจะเป็น
+                                    และประมาณระดับไขมันในร่างกาย<br><br>
+                                    สูตรคำนวณ คือ <br>น้ำหนักตัว[Kg] / (ส่วนสูง[m] ยกกำลังสอง)
+                                    </p>
+                            </div>
+                            <ul class = "text-center fw-6 font-md">
+                                <li><a href = "#clients" style="color:brown">classification</a></li>
+                                <li><a href = "#clients" style="color:brown">Disease Risk</a></li>
+                                <li><a href = "#clients" style="color:brown">Low calorie menu</a></li>
+                                <li><a href = "#clients" style="color:brown">Trick Excersise</a></li>
+
+                            </ul>
+                            </div>
+                    </article>
+
+                    <article class = "courses-item">
+                        <div class = "bg-white-sm">
+                            <div class = "image">
+                                <img src = "images/BMR.jpg" alt = "course image">
+                            </div>
+                            <div class = "details">
+                                <h3 class = "font-lg">Photography</h3>
+                                <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quo reprehenderit quas!</p>
+                            </div>
+                            <ul class = "text-center fw-6 font-md">
+                                <li>Time: 6 pm</li>
+                                <li>Teacher: Floyd Fukuda</li>
+                            </ul>
+                            <a href = "#" class = "btn bg-green">Join Now</a>
+                        </div>
+                    </article>
+
+                    <article class = "courses-item">
+                        <div class = "bg-white-sm">
+                            <div class = "image">
+                                <img src = "images/TDEE.jpg" alt = "course image">
+                            </div>
+                            <div class = "details">
+                                <h3 class = "font-lg">Digita Marketing</h3>
+                                <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quo reprehenderit quas!</p>
+                            </div>
+                            <ul class = "text-center fw-6 font-md">
+                                <li>Time: 10 pm</li>
+                                <li>Teacher: Elena Cully</li>
+                            </ul>
+                            <a href = "#" class = "btn bg-green">Join Now</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- end of courses section -->
+        <!-- clients section -->
+        <section class = "clients py-4 bg-white-sm" id = "clients">
+            <div class = "container">
+                <div class = "section-title">
+                    <h2>BMI Information</h2>
+                </div>
+                <div class = "clients-content">
+                    <div class = "clients-item text-center">
+                        <div class = "image mx-auto">
+                            <img src = "images/BMI (Logo).png" alt = "clients image">
+                        </div>
+                        <div>
+                            <div class="bmi_category_container">
+                                <table>
+                                  <tr>
+                                    <th>ค่าอยู่ในเกณฑ์</th>
+                                    <th>ค่า BMI</th>
+                                    <th>ภาวะเสี่ยงต่อโรค</th>
+                                  </tr>
+                                  <tr>
+                                    <td>ผอมเกินไป</td>
+                                    <td>น้อยกว่า 18.5</td>
+                                    <td>เสี่ยงต่อการได้รับสารอาหารไม่เพียงพอ</td>
+                                  </tr>
+                                  <tr>
+                                    <td>น้ำหนักปกติ</td>
+                                    <td>18.6-22.9</td>
+                                    <td>มีความเสี่ยงต่อโรคน้อยมาก</td>
+                                  </tr>
+                                  <tr>
+                                    <td>น้ำหนักเกิน</td>
+                                    <td>23.0-24.9</td>
+                                    <td>มีความเสี่ยงต่อโรคมากกว่าปกติ</td>
+                                  </tr>
+                                  <tr>
+                                    <td>ภาวะอ้วน</td>
+                                    <td>25.0 - 29.9</td>
+                                    <td>มีความเสี่ยงต่อการเกิดโรคสูง</td>
+                                  </tr>
+                                  <tr>
+                                    <td>ภาวะอ้วนมาก</td>
+                                    <td>30 ขึ้นไป</td>
+                                    <td>เสี่ยงต่อการเกิดโรคสูงมาก</td>
+                                  </tr><br>
+                                </table>
+                              </div>
+                            <!-- <span class = "font-md fw-7">John Doe</span>
+                            <span class = "font-sm fw-6">CEO Smart Edu.</span> -->
+                        </div>
+                    </div>
+
+                    <div class = "clients-item text-center">
+                        <div><h2>classification page 01</h2></div><br>
+                        <div>
+                            <div class = "teachers-content grid text-center">
+                                <div class = "teachers-item">
+                                    <!-- <div class = "image">
+                                        <img src = "images/teachers_img_1.png" alt = "teachers image">
+                                    </div> -->
+                                    <div class = "boxinfo">
+                                        <p class = "fw-6 font-lg">Underweight</p><hr><br>
+                                        <p class = "text-green font-md fw-5">น้ำหนักน้อยกว่าปกติก็ไม่ค่อยดี หากคุณสูงมากแต่น้ำหนักน้อยเกินไป
+                                            อาจเสี่ยงต่อการได้รับสารอาหารไม่เพียงพอหรือได้รับพลังงานไม่เพียงพอ
+                                            ส่งผลให้ร่างกายอ่อนเพลียง่าย
+                                            การรับประทานอาหารให้เพียงพอและออกกำลังกายแบบ "เวทเทรนนิ่ง"
+                                            เพื่อเสริมสร้างกล้ามเนื้อสามารถช่วยเพิ่มค่า BMI
+                                            ให้อยู่ในเกณฑ์ปกติ</p>
+                                    </div>
+                                </div>
+                                <div class = "teachers-item">
+                                    <!-- <div class = "image">
+                                        <img src = "images/teachers_img_2.png" alt = "teachers image">
+                                    </div> -->
+                                    <div class = "boxinfo">
+                                        <p class = "fw-6 font-lg">Healthy</p><hr><br>
+                                        <p class = "text-green font-md fw-5"> น้ำหนักที่เหมาะสมสำหรับคนไทยคือค่า BMI ระหว่าง 18.5-22.9
+                                            จัดอยู่ในเกณฑ์ปกติ
+                                            ห่างไกลโรคที่เกิดจากความอ้วนและมีความเสี่ยงต่อการเกิดโรคต่างๆน้อยที่สุด
+                                            ควรพยายามรักษาระดับค่า BMI ให้อยู่ในระดับนี้ให้นานที่สุด</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "clients-item text-center">
+                        <div><h2>classification page 02</h2></div><br>
+                        <div>
+                            <div class = "teachers-content grid text-center">
+            
+                                <div class = "teachers-item">
+                                    <!-- <div class = "image">
+                                        <img src = "images/teachers_img_3.png" alt = "teachers image">
+                                    </div> -->
+                                    <div class = "boxinfo">
+                                        <p class = "fw-6 font-lg">Overweight</p><hr><br>
+                                        <p class = "text-green font-md fw-5"> พยายามอีกนิดเพื่อลดน้ำหนักให้เข้าสู่ค่ามาตรฐาน เพราะค่า BMI
+                                            ในช่วงนี้ยังถือว่าเป็นกลุ่มผู้ที่มีความอ้วนอยู่บ้าง
+                                            แม้จะไม่ถือว่าอ้วน
+                                            แต่หากประวัติคนในครอบครัวเคยเป็นโรคเบาหวานและความดันโลหิตสูง
+                                            ก็ถือว่ายังมีความเสี่ยงมากกว่าคนปกติ</p>
+                                    </div>
+                                </div>
+            
+                                <div class = "teachers-item">
+                                    <!-- <div class = "image">
+                                        <img src = "images/teachers_img_4.png" alt = "teachers image">
+                                    </div> -->
+                                    <div class = "boxinfo">
+                                        <p class = "fw-6 font-lg">Extremely&nbsp;Obese</p><hr><br>
+                                        <p class = "text-green font-md fw-5">30.0
+                                            ขึ้นไปค่อนข้างอันตราย เพราะเข้าเกณฑ์อ้วนมาก
+                                            เสี่ยงต่อการเกิดโรคร้ายแรงที่แฝงมากับความอ้วน หากค่า BMI
+                                            อยู่ในระดับนี้จะต้องระวังการรับประทานไขมัน
+                                            และควรออกกำลังกายอย่างสม่ำเสมอ หากเลขยิ่งสูงกว่า 40.0
+                                            ยิ่งแสดงถึงความอ้วนที่มากขึ้น ความเสี่ยงจะมากขึ้นตามด้วย</p>
+                                    </div>
+                                </div>
+                            </div>        
+                        </div>
+                    </div>
+                </div>
+                <br><br><br>
+                <center>
+                    <a href = "#courses" class = "btn bg-green mx-auto">Read more</a>
+                </center>
+            </div>
+        </section>
+        <!-- end of clients section -->
+
+        <!-- blogs section -->
+        <section class = "blogs py-4 bg-white" id = "blogs">
+            <div class = "container text-center">
+                <div class = "section-title">
+                    <h2>BMI Disease</h2>
+                </div>
+                <div class = "blogs-content">
+                    <div class = "blogs-item text-center">
+                        <div class = "image">
+                            <img src = "images/sugar.jpg" height="220px" alt = "blogs image">
+                        </div>
+                        <div>
+                            <h3 class = "font-lg">โรคเบาหวาน</h3>
+                            <p class = "text">เป็นโรคที่มาควบคู่กันกับโรคอ้วน
+                                โรคเบาหวานหมายถึงภาวะที่ร่างกายของเรามีปริมาณน้ำตาลในเลือดสูงกว่าระดับปกติ
+                                ซึ่งเกิดจากการที่ตับอ่อนหลั่งอินซูลิน
+                                ซึ่งคือฮอร์โมนที่ช่วยเผาผลาญคาร์โบไฮเดรตและไขมัน
+                                โดยเปลี่ยนน้ำตาลเป็นพลังงานในร่างกาย ได้อย่างไม่มีประสิทธิภาพ
+                                น้ำตาลจึงสะสมอยู่ในร่างกายมาก ไขมันในเลือดจึงสูงตามไปด้วย</p>
+                        </div>
+                    </div>
+
+                    <div class = "blogs-item text-center">
+                        <div class = "image">
+                            <img src = "images/heart_di.jpg" height="220px"alt = "blogs image">
+                        </div>
+                        <div>
+                            <h3 class = "font-lg">โรคหัวใจ</h3>
+                            <p class = "text">โรคอ้วนทำให้ร่างกายมีคอเลสเตอรอลและไขมันสะสมในร่างกายมากเกินไปจนไขมันเหล่านั้นไปพอกอยู่ในเส้นเลือด
+                                ทำให้หลอดเลือดตีบแคบลง หากนานวันเข้าก็จะเกิดการอุดตันในที่สุด
+                                เลือดจึงไหลเวียนไปเลี้ยงหัวใจไม่เพียงพอ
+                                สุดท้ายก็นำไปสู่ภาวะกล้ามเนื้อหัวใจตาย</p>
+                        </div>
+                    </div>
+
+                    <div class = "blogs-item text-center">
+                        <div class = "image">
+                            <img src = "images/brain.jpg" height="220px"alt = "blogs image">
+                        </div>
+                        <div>
+                            <h3 class = "font-lg">โรคหลอดเลือดสมอง</h3>
+                            <p class = "text">เช่นเดียวกับโรคหัวใจ
+                                ไขมันที่มีมากเกินไปในร่างกายยังอาจไปพอกอยู่ในหลอดเลือดที่หล่อเลี้ยงสมอง
+                                ทำให้หลอดเลือดบริเวณนั้นตีบตันหรืออุดตัน
+                                ผลคือเลือดไม่สามารถส่งไปเลี้ยงสมองได้อย่างเพียงพอ
+                                นำมาสู่ภาวะสมองขาดออกซิเจน สุดท้ายก็เข้าสู่ภาวะสมองตาย</p>
+                        </div>
+                    </div>
+
+                    <div class = "blogs-item text-center">
+                        <div class = "image">
+                            <img src = "images/cancer.jpg" height="220px"alt = "blogs image">
+                        </div>
+                        <div>
+                            <h3 class = "font-lg">โรคมะเร็ง</h3>
+                            <p class = "text">บางคนอาจจะยังไม่รู้ว่าโรคอ้วนก็เสี่ยงทำให้เกิดมะเร็งเช่นเดียวกัน
+                                ไขมันในร่างกายที่สะสมมากเกินไป ทำให้อวัยวะภายในร่างกายทำงานผิดปกติ
+                                จึงเสี่ยงก่อให้เกิดเซลล์มะเร็งหรือเนื้อร้าย เช่น มะเร็งตับ มะเร็งสมอง
+                                มะเร็งเต้านม เป็นต้น</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href = "#courses" class = "btn bg-green mx-auto">Read more</a>
+            </div>
+        </section>
+        <!-- end of blogs section -->
+
+         <!-- teachers section -->
+         <section class = "teachers py-4 bg-white-sm" id = "teachers">
+            <div class = "container">
+                <div class = "section-title">
+                    <h2>low calorie menu</h2><br>
+                </div>
+                <div class = "teachers-content grid text-center">
+                    <div class = "teachers-item">
+                        <div class = "clients-item text-center">
+                            <div class = "image mx-auto">
+                                <img src = "images/food1.jpg" alt = "clients image">
+                            </div>
+                        </div>
+                        <div class = "info">
+                            <p class = "fw-6 font-lg">เกาเหลาหรือแกงจืดวุ้นเส้น</p>
+                            <p class = "text-green font-md fw-5">150 Kcal</p>
+                        </div>
+                    </div>
+
+                    <div class = "teachers-item">
+                        <div class = "clients-item text-center">
+                            <div class = "image mx-auto">
+                                <img src = "images/food2.jpg" alt = "clients image">
+                            </div>
+                        </div>
+                        <div class = "info">
+                            <p class = "fw-6 font-lg">ต้มยำไก่น้ำใส </p>
+                            <p class = "text-green font-md fw-5">65-100 Kcal</p>
+                        </div>
+                    </div>
+
+                    <div class = "teachers-item">
+                        <div class = "clients-item text-center">
+                            <div class = "image mx-auto">
+                                <img src = "images/food3.jpg" alt = "clients image">
+                            </div>
+                        </div>
+                        <div class = "info">
+                            <p class = "fw-6 font-lg">สุกี้น้ำ (เนื้อไก่หรือทะเล) </p>
+                            <p class = "text-green font-md fw-5">200-350 Kcal</p>
+                        </div>
+                    </div>
+
+                    <div class = "teachers-item">
+                        <div class = "clients-item text-center">
+                            <div class = "image mx-auto">
+                                <img src = "images/food4.jpg" alt = "clients image">
+                            </div>
+                        </div>
+                        <div class = "info">
+                            <p class = "fw-6 font-lg">ยำวุ้นเส้น</p>
+                            <p class = "text-green font-md fw-5">120-200 Kcal</p>
+                        </div>
+                    </div>
+
+                    <div class = "teachers-item">
+                        <div class = "clients-item text-center">
+                            <div class = "image mx-auto">
+                                <img src = "images/food5.jpg" alt = "clients image">
+                            </div>
+                        </div>
+                        <div class = "info">
+                            <p class = "fw-6 font-lg">ผัดผักบุ้ง</p>
+                            <p class = "text-green font-md fw-5">40-50 Kcal</p>
+                        </div>
+                    </div>
+
+                    <div class = "teachers-item">
+                        <div class = "clients-item text-center">
+                            <div class = "image mx-auto">
+                                <img src = "images/food6.jpg" alt = "clients image">
+                            </div>
+                        </div>
+                        <div class = "info">
+                            <p class = "fw-6 font-lg">ยำไข่ต้ม</p>
+                            <p class = "text-green font-md fw-5">100-110 Kcal</p>
+                        </div>
+                    </div>
+
+                    <div class = "teachers-item">
+                        <div class = "clients-item text-center">
+                            <div class = "image mx-auto">
+                                <img src = "images/food7.jpg" alt = "clients image">
+                            </div>
+                        </div>
+                        <div class = "info">
+                            <p class = "fw-6 font-lg">ต้มแซ่บกระดูกอ่อน</p>
+                            <p class = "text-green font-md fw-5">180-200 Kcal</p>
+                        </div>
+                    </div>
+
+                    <div class = "teachers-item">
+                        <div class = "clients-item text-center">
+                            <div class = "image mx-auto">
+                                <img src = "images/food8.jpg" alt = "clients image">
+                            </div>
+                        </div>
+                        <div class = "info">
+                            <p class = "fw-6 font-lg">ผัดผักใส่กุ้ง</p>
+                            <p class = "text-green font-md fw-5">200 Kcal</p>
+                        </div>
+                    </div>
+
+                    <div class = "teachers-item">
+                        <div class = "clients-item text-center">
+                            <div class = "image mx-auto">
+                                <img src = "images/food9.jpg" alt = "clients image">
+                            </div>
+                        </div>
+                        <div class = "info">
+                            <p class = "fw-6 font-lg">กระเพาะปลา</p>
+                            <p class = "text-green font-md fw-5">250 Kcal</p>
+                        </div>
+                    </div>  
+                </div><br><br><br><br>
+                <center>
+                <a href = "#courses" class = "btn bg-green mx-auto">Read more</a>
+                </center>
+            </div>
+        </section>
+        <!-- end of teachers section -->
+
+         <!-- programs section -->
+         <section class = "programs py-4 bg-white" id = "programs">
+            <div class = "container">
+                <div class = "section-title">
+                    <h2>trick exercise</h2>
+                </div>
+                <div class = "programs-content grid">
+                    <div class = "programs-item text-white text-center">
+                        <img src = "images/ex1.jpg" alt = "programs image">
+                        <div class = "info">
+                            <p class = "fw-6 font-xl"><br>10 – 15 ครั้ง <br></p>
+                            <h3 class = "text">ทั้งหมด 3 เซต <br> การเปลี่ยนจากท่าวิดพื้นเป็น กระโดดและกลับสู่ท่าวิดพื้น</h3>
+                            <br>
+                            <center>
+                                <a href = "https://youtu.be/CxmnTU1U5Gg?si=Sp-rDz_kZY6zDOu3" class = "btn bg-green mx-auto">tutorial</a>
+                            </center>
+                        </div>
+                    </div>
+
+                    <div class = "programs-item text-white text-center">
+                        <img src = "images/ex2.jpg" alt = "programs image">
+                        <div class = "info">
+                            <p class = "fw-6 font-xl"><br>10 – 15 ครั้ง <br></p>
+                            <h3 class = "text">ทั้งหมด 3 เซต <br> สิ่งสำคัญคือจะเน้นที่กล้ามเนื้อหน้าท้อง</h3>
+                            <br>
+                            <center>
+                                <a href = "https://youtu.be/vC2zO4zbYcQ?si=1W76jhpbLF-PRT2W" class = "btn bg-green mx-auto">tutorial</a>
+                            </center>
+                        </div>
+                    </div>
+
+                    <div class = "programs-item text-white text-center">
+                        <img src = "images/ex3.jpg" alt = "programs image">
+                        <div class = "info">
+                            <p class = "fw-6 font-xl"><br>20 วินาที <br>พัก 10 วินาที<br></p>
+                            <h3 class = "text">ทั้งหมด 3 เซต <br>ท่าฝึกความอดทนระหว่างแขน ลำตัว และปลายเท้า </h3>
+                            <br>
+                            <center>
+                                <a href = "https://youtu.be/pSHjTRCQxIw?si=9_YMJIfD-3FyhhCl" class = "btn bg-green mx-auto">tutorial</a>
+                            </center>
+                        </div>
+                    </div>
+
+                    <div class = "programs-item text-white text-center">
+                        <img src = "images/ex4.jpg "alt = "programs image">
+                        <div class = "info">
+                            <p class = "fw-6 font-xl"><br>10 – 20 ครั้ง <br></p>
+                            <h3 class = "text">ทั้งหมด 3 เซต <br> ช่วยปรับปรุงความมั่นคงและความสมดุลของร่างกาย</h3>
+                            <br>
+                            <center>
+                                <a href = "https://youtu.be/Wp4BlxcFTkE?si=J9ZnMI01FW0Ta3Aa" class = "btn bg-green mx-auto">tutorial</a>
+                            </center>
+                        </div>
+                    </div>
+
+                    <div class = "programs-item text-white text-center">
+                        <img src = "images/ex5.jpg" alt = "programs image">
+                        <div class = "info">
+                            <p class = "fw-6 font-xl"><br>12 ครั้ง <br>ขึ้นไป <br></p>
+                            <h3 class = "text">เป็นท่าที่กระชับสัดส่วนได้ดี</h3>
+                            <br>
+                            <center>
+                                <a href = "https://youtu.be/A-cFYWvaHr0?si=A0fiyefzonOD5xAT" class = "btn bg-green mx-auto">tutorial</a>
+                            </center>
+                        </div>
+                    </div>
+
+                    <div class = "programs-item text-white text-center">
+                        <img src = "images/ex6.jpg" alt = "programs image">
+                        <div class = "info">
+                            <p class = "fw-6 font-xl"><br>1 นาที <br>พัก 1 นาที<br></p>
+                            <h3 class = "text">ทั้งหมด 3 เซต <br> เป็นหนึ่งในแบบฝึกหัดการเผาแคลอรี่ที่ดีที่สุด</h3>
+                            <br>
+                            <center>
+                                <a href = "https://youtu.be/pA6o-a3y1Vo?si=h7inTcsUUIHqThO_" class = "btn bg-green mx-auto">tutorial</a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <center><br><br><br>
+                    <a href = "#courses" class = "btn bg-green mx-auto">Read more</a>
+                </center>
+            </div>
+        </section>
+        <!-- end of programs section -->
+
+        <!-- features section -->
+          <section class = "features bg-white-sm py-4" id = "features">
+            <div class = "container">
+                <div class = "section-title">
+                    <h2>Manual</h2>
+                </div>
+                <div class = "features-content grid text-center">
+                    <div class = "features-item">
+                        <div class = "icon bg-white flex">
+                            <img src = "images/features_icon_1.png" alt = "features icon">
+                        </div>
+                        <h3 class = "font-lg">Calculator</h3>
+                        <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo eos earum ipsum ea facilis neque, doloribus asperiores necessitatibus.</p>
+                    </div>
+
+                    <div class = "features-item">
+                        <div class = "icon bg-white flex">
+                            <img src = "images/features_icon_2.png" alt = "features icon">
+                        </div>
+                        <h3 class = "font-lg">Information</h3>
+                        <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo eos earum ipsum ea facilis neque, doloribus asperiores necessitatibus.</p>
+                    </div>
+
+                    <div class = "features-item">
+                        <div class = "icon bg-white flex">
+                            <img src = "images/features_icon_3.png" alt = "features icon">
+                        </div>
+                        <h3 class = "font-lg">Feedback</h3>
+                        <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo eos earum ipsum ea facilis neque, doloribus asperiores necessitatibus.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of features section -->
+
+        <!-- newsletter section -->
+                <section class = "newsletter py-4" id = "newsletter">
+                    <div class = "container">
+                        <div class = "newsletter-content flex text-white text-center"><br><br><br>
+                            <h2 class = "font-xl">experience feedback</h2>
+                        </div>
+                    </div>
+                </section>
+        <!-- end of newsletter section -->
+
+        <!-- contact section -->
+        <section class = "contact py-4 bg-white" id = "contact">
+            <div class = "container">
+                <div class = "section-title">
+                    <h3>Recommendation</h3><br>
+                </div>
+                <div class = "contact-content grid">
+                    <div class = "contact-right">
+                        <!-- <iframe src="https://images.everydayhealth.com/images/healthy-living/about-us-hero-alt.jpg?sfvrsn=68592040_1" width="100" height="150" style="border:0;" ></iframe> -->
+                        <img src="https://images.everydayhealth.com/images/healthy-living/about-us-hero-alt.jpg?sfvrsn=68592040_1">
+                        <div class = "contact-info grid text-center">
+                            <div class = "contact-info-group">
+                                <span class = "text-green">
+                                    <i class = "fas fa-map-marker-alt fa-2x"></i>
+                                </span>
+                                <p class = "text font-md fw-6">Thammasat School of Engineering</p>
+                            </div>
+                            <div class = "contact-info-group">
+                                <span class = "text-green">
+                                    <i class = "fas fa-envelope fa-2x"></i>
+                                </span>
+                                <p class = "text font-md fw-6">A_Care.co.th@gmail.com</p>
+                            </div>
+                            <div class = "contact-info-group">
+                                <span class = "text-green">
+                                    <i class = "fas fa-phone fa-2x"></i>
+                                </span>
+                                <p class = "text font-md fw-6">099 999 9999</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "contact-left">
+                        <form action = "" method = "" class = "font-md text-center">
+                            <input type = "text" class = "form-control fw-6" placeholder="Full Name" name = "full_name">
+                            <input type = "email" class = "form-control fw-6" placeholder="E-mail" name = "email">
+                            <textarea rows = "5" class = "form-control fw-6" placeholder="Message" name = "message"></textarea>
+                            <button type = "submit" class = "btn bg-green">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of contact section -->
+    </main>
+    <!-- end of main -->
+
+    <!-- footer -->
+    <footer class = "footer bg-dark" id = "footer">
+        <div class = "container">
+            <div class = "footer-content grid">
+                <div class = "footer-logo flex">
+                    <img src = "images/logo.png">
+                    <span class = "text-uppercase text-white font-sm fw-5">A-Care Calculator</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- slick slider js -->
+    <script src = "plugins/slick-1.8.1/slick/slick.js"></script>
+    <!-- custom js -->
+    <script src = "js/script.js"></script>
+</body>
+</html>
